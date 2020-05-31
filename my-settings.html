@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mySettings</title>
+    <link rel="icon" href="images/logo_x.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+<body>
+    <nav class="navbar">
+        <img src="images/logo_x.png" alt="" class="logo">
+        <div class="links">
+            <a href="home.html" class="goTo">home</a>
+            <a href="my-plans.html" class="goTo">myPlans</a>
+            <a href="my-country.html" class="goTo">myCountry</a>
+        </div>
+        <div class="btn-group dropleft">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="images/profile-icon.png" alt="" class="profile">
+            </button>
+            <div class="dropdown-menu dropi">
+                <h6 class="hi-arta">Hi, Arta!</h6>
+              <a href="home.html"><button class="btn side-btn" type="button">go to home</button></a>
+              <a href="my-plans.html"><button class="btn side-btn" type="button">go to myPlans</button></a>
+              <a href="my-country.html"><button class="btn side-btn" type="button">go to myCountry</button></a>
+              <a href="my-settings.html"><button class="btn side-btn" type="button">go to mySettings</button></a>
+              <button type="button" onclick="openForm()" class="btn side-btn log-out">log out</button>
+              <div class="form-popup log-out-form" id="myLogForm">
+                <h3 class="confirmation">Arta, do you want to get out of your Express Travel account?</h3>
+                <button class="btn log-out-form-btn" onclick="closeLogForm()">go back</button>
+                <a href="secondpage.html"><button class="btn log-out-form-btn">log out</button></a>
+            </div>
+        
+            </div>
+          </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-6 left-side2">
+        <h2 class="mysettings">mySettings</h2>
+        <div class="upload-profile-pic"><h5>upload pic</h5></div>
+        <h6 class="info info2">Arta Pllana <br>
+            Mitrovica, Kosovo <br>
+        20, female</h6> <br>
+        </div>
+        <div class="col-lg-6 editYourProfile">
+            <h2 class="edit-title">edit yourProfile</h2>
+            <table>
+                <tr>
+                    <td>name</td>
+                    <td>Arta Pllana</td>
+                </tr>
+
+                <tr>
+                    <td>location</td>
+                    <td>Mitrovica, Kosovo</td>
+                </tr>
+                <tr>
+                    <td>age</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>gender</td>
+                    <td>Female</td>
+                </tr>
+
+                <tr>
+                    <td>status</td>
+                    <td>local citizen</td>
+                </tr>
+                <tr>
+                    <td><strong>bio</strong></td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum lorem ipsum lorem ipsum</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

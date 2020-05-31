@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="icon" href="images/logo_x.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+<body id="body">
+    <nav class="navbar">
+        <a href="homepage.html"><img src="images/logo_x.png" alt="" class="logo"></a>
+        <div class="links">
+            <a href="home.html" class="goTo"><strong>home</strong></a>
+            <a href="my-plans.html" class="goTo">myPlans</a>
+            <a href="my-country.html" class="goTo">myCountry</a>
+        </div>
+        <div class="btn-group dropleft">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="images/profile-icon.png" alt="" class="profile">
+            </button>
+            <div class="dropdown-menu dropi">
+                <h6 class="hi-arta">Hi, Arta!</h6>
+              <a href="home.html"><button class="btn side-btn" type="button">go to home</button></a>
+              <a href="my-plans.html"><button class="btn side-btn" type="button">go to myPlans</button></a>
+              <a href="my-country.html"><button class="btn side-btn" type="button">go to myCountry</button></a>
+              <a href="my-settings.html"><button class="btn side-btn" type="button">go to mySettings</button></a>
+              <button type="button" onclick="openLogForm()" class="btn side-btn log-out">log out</button>
+            </div>
+          </div>
+    </nav>
+
+    <div class="select-group">
+
+    <select name="countries" id="countries" class="countries">
+        <option value="none">click on the map or use this dropdown menu to select your country</option>
+
+            <optgroup label="Hungary">
+                <option value="budapest">Budapest</option>
+            </optgroup>
+            <optgroup label="France">
+                <option value="paris">Paris</option>
+            </optgroup>
+            <optgroup label="Switzerland">
+                <option value="bern">Bern</option>
+            </optgroup>
+
+    </select> <a href="budapest.html"><button class="btn btn-dark btn-go">Go</button></a>
+</div>
+
+    <div id="map" class="map"></div>
+
+    <div class="form-popup log-out-form" id="myLogForm">
+        <h3 class="confirmation">Arta, do you want to get out of your Express Travel account?</h3>
+        <button class="btn log-out-form-btn" onclick="closeLogForm()">go back</button>
+        <a href="secondpage.html"><button class="btn log-out-form-btn">log out</button></a>
+    </div>
+
+
+
+    <script src="js/mapdata.js"></script>
+    <script src="js/worldmap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

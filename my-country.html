@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myCountry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo_x.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+<body>
+    <nav class="navbar">
+        <img src="images/logo_x.png" alt="" class="logo">
+        <div class="links">
+            <a href="home.html" class="goTo">home</a>
+            <a href="my-plans.html" class="goTo">myPlans</a>
+            <a href="my-country.html" class="goTo"><strong> myCountry</strong></a>
+        </div>
+
+        <div class="btn-group dropleft">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="images/profile-icon.png" alt="" class="profile">
+            </button>
+            <div class="dropdown-menu dropi">
+                <h6 class="hi-arta">Hi, Arta!</h6>
+              <a href="home.html"><button class="btn side-btn" type="button">go to home</button></a>
+              <a href="my-plans.html"><button class="btn side-btn" type="button">go to myPlans</button></a>
+              <a href="my-country.html"><button class="btn side-btn" type="button">go to myCountry</button></a>
+              <a href="my-settings.html"><button class="btn side-btn" type="button">go to mySettings</button></a>
+              <button type="button" onclick="openLogForm()" class="btn side-btn log-out">log out</button>
+
+        
+            </div>
+          </div>
+
+        
+    </nav>
+    <div class="form-popup log-out-form" id="myLogForm">
+        <h3 class="confirmation">Arta, do you want to get out of your Express Travel account?</h3>
+        <button class="btn log-out-form-btn" onclick="closeLogForm()">go back</button>
+        <a href="secondpage.html"><button class="btn log-out-form-btn">log out</button></a>
+    </div>
+    <div class="container-fluid">
+        <div class="left-side">
+        <img src="images/profile-icon.png" class="upload-pic" alt=""><br>
+            
+        <h6 class="info">Arta Pllana <br>
+        Mitrovica, Kosovo <br>
+    20, female</h6> <br>
+    <a href="my-settings.html"><button class="btn btn-light edit-profile">Edit profile</button></a>
+        </div>
+
+        <div class="right-side">
+            <p class="country-text"><strong>Dear Arta! You could play a big role on letting us know more about Mitrovica, Kosovo <br></strong> This would help our tourists get more familiar with your city and visit places.</p>
+            <p class="country-text">If you are a tour guide, please let us know by choosing the option down below. We are hiring professionals to help on our goal: giving users the best experience!</p>
+            <div class="row">
+            <div class="card">
+                <img src="images/logo_x.png" alt="" class="card-img-top">
+                <p>express yourself <br>
+                as a local citizen</p>
+            </div>
+            <div class="card">
+                <img src="images/logo_x.png" alt="" class="card-img-top">
+                <p>express yourself <br>
+                as a tour guide</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <footer>
+    <div class="footer2">
+        <p class="footer-left">Contact the center of Express Tourism by: <br>
+        email: info@expresstourism.com <br>
+        phone: +383 49 000 000</p>
+
+        <p class="footer-right">
+            Follow us on: <br>
+            facebook.com/expresstourism <br>
+            instagram.com/expresstourism
+        </p>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

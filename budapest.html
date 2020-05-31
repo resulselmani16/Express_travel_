@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Budapest</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="icon" href="images/logo_x.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="homepage.html"><img src="images/logo_x.png" alt="" class="logo"></a>
+        <div class="links">
+            <a href="home.html" class="goTo"><strong>home</strong></a>
+            <a href="my-plans.html" class="goTo">myPlans</a>
+            <a href="my-country.html" class="goTo">myCountry</a>
+            <a href="our-feed.html" class="goTo">ourFeed</a>
+        </div>
+        <div class="btn-group dropleft">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="images/profile-icon.png" alt="" class="profile">
+            </button>
+            <div class="dropdown-menu dropi">
+                <h6 class="hi-arta">Hi, Arta!</h6>
+              <a href="home.html"><button class="btn side-btn" type="button">go to home</button></a>
+              <a href="my-plans.html"><button class="btn side-btn" type="button">go to myPlans</button></a>
+              <a href="my-country.html"><button class="btn side-btn" type="button">go to myCountry</button></a>
+              <a href="my-settings.html"><button class="btn side-btn" type="button">go to mySettings</button></a>
+              <button type="button" onclick="openLogForm()" class="btn side-btn log-out">log out</button>
+            </div>
+          </div>
+    </nav>
+    <div class="form-popup log-out-form" id="myLogForm">
+        <h3 class="confirmation">Arta, do you want to get out of your Express Travel account?</h3>
+        <button class="btn log-out-form-btn" onclick="closeLogForm()">go back</button>
+        <a href="secondpage.html"><button class="btn log-out-form-btn">log out</button></a>
+    </div>
+    <div class="container-fluid">
+        <p class="buda">Welcome to Budapest, Arta. <br>
+            Here's what you can do in our city.</p>
+        <p class="pest">top places to visit</p>
+        <div class="row">
+            <img class="budapest-img"
+                src="https://images.pexels.com/photos/732057/pexels-photo-732057.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="">
+            <img class="budapest-img"
+                src="https://images.pexels.com/photos/47727/budapest-church-architecture-matthias-church-47727.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="">
+            <img class="budapest-img"
+                src="https://images.pexels.com/photos/2600763/pexels-photo-2600763.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="">
+            <img class="budapest-img"
+                src="https://images.pexels.com/photos/2450502/pexels-photo-2450502.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="">
+        </div>
+        <p class="buda">Haven't found a place to stay yet? Here are our top six recommendations for you.</p>
+        <div class="row">
+            <div class="hotels">
+                <a class="hoteli"
+                    href="https://www.airbnb.com/rooms/15324947?location=Budapest%2C%20Hungary&source_impression_id=p3_1590880058_QhlICsNJoo3O4Z9L&guests=1&adults=1"><img
+                        class="budapest-hotels"
+                        src="https://a0.muscache.com/im/pictures/0a3d3154-969d-4263-ba55-048220f040dc.jpg?aki_policy=xx_large"
+                        alt="" id="hoteli"> <br><label for="hoteli">2B Hostel & Rooms</label></a>
+            </div>
+            <div class="hotels">
+                <a class="hoteli"
+                    href="https://www.airbnb.com/rooms/36350294?location=Budapest%2C%20Hungary&source_impression_id=p3_1590875864_mJB93rMZZT47QLPg&guests=1&adults=1"><img
+                        class="budapest-hotels"
+                        src="https://a0.muscache.com/im/pictures/2fb6f07d-85ff-43da-be1f-34e874c09109.jpg?aki_policy=xx_large"
+                        alt="" id="hoteli"> <br><label for="hoteli">Metropolis Hostel</label></a>
+            </div>
+            <div class="hotels">
+                <a class="hoteli"
+                    href="https://www.airbnb.com/rooms/26302882?location=Budapest%2C%20Hungary&source_impression_id=p3_1590880136_tIhaNL1L8Ma5FYPd"><img
+                        class="budapest-hotels"
+                        src="https://a0.muscache.com/im/pictures/f2dffd01-c8e1-4a03-a7f1-88c56551ce9a.jpg?aki_policy=xx_large"
+                        alt="" id="hoteli"> <br><label for="hoteli">White Star Central <br> Apartment</label></a>
+            </div>
+            <div class="hotels">
+                <a class="hoteli"
+                    href="https://www.airbnb.com/rooms/12279174?location=Budapest%2C%20Hungary&source_impression_id=p3_1590880218_PF4m5nxMCy%2BLSSCS&guests=1&adults=1"><img
+                        class="budapest-hotels"
+                        src="https://a0.muscache.com/im/pictures/fa2f044f-fed5-4403-910a-eb8ee7ae7320.jpg?aki_policy=large"
+                        alt="" id="hoteli"> <br><label for="hoteli">Hi5 Apartments 52</label></a>
+            </div>
+            <div class="hotels">
+                <a class="hoteli"
+                    href="https://www.airbnb.com/rooms/36382543?location=Budapest%2C%20Hungary&source_impression_id=p3_1590880289_nTIgKH0%2BQf5vrwe%2F&guests=1&adults=1"><img
+                        class="budapest-hotels"
+                        src="https://a0.muscache.com/im/pictures/2b2daa05-6269-4c07-bd7c-695e1a177e05.jpg?aki_policy=x_large"
+                        alt="" id="hoteli"> <br><label for="hoteli">Operett Residence <br> Studio III</label></a>
+            </div>
+            <div class="hotels">
+                <a class="hoteli"
+                    href="https://www.airbnb.com/rooms/31165635?location=Budapest%2C%20Hungary&source_impression_id=p3_1590880568_zKe5mSiJhYy9xduE&guests=1&adults=1"><img
+                        class="budapest-hotels"
+                        src="https://a0.muscache.com/im/pictures/3e76c7fc-e6dc-4aa9-b623-fd1c63a77d50.jpg?aki_policy=xx_large"
+                        alt="" id="hoteli"> <br><label for="hoteli">Feodorm: Cool, modern <br> apartment in the <br>
+                        center</label></a>
+            </div>
+
+            <a class="hoteli more"
+                href="https://www.airbnb.com/s/Budapest--Hungary/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&place_id=ChIJyc_U0TTDQUcRYBEeDCnEAAQ&source=structured_search_input_header&search_type=filter_change&query=Budapest%2C%20Hungary&room_types%5B%5D=Hotel%20room">...more</a>
+
+
+
+
+        </div>
+        <p class="buda">You want to feel like a local for some days? Get in touch with Budapest locals and tour guides
+            for the best experience!</p>
+        <div class="row">
+            <div class="guides">
+                <button onclick="openForm()" class="btn-guide"><img class="budapest-guides"
+                        src="https://eshendetesia.com/images/user-profile.png" alt="" id="hoteli">
+                    <br><label class="guide-name" for="hoteli">Andris Kobak</label></button>
+            </div>
+            <div class="guides">
+                <button onclick="openForm()" class="btn-guide"><img class="budapest-guides"
+                        src="https://eshendetesia.com/images/user-profile.png" alt="" id="hoteli">
+                    <br><label class="guide-name" for="hoteli">Andris Kobak</label></button>
+            </div>
+            <div class="guides">
+                <button onclick="openForm()" class="btn-guide"><img class="budapest-guides"
+                        src="https://eshendetesia.com/images/user-profile.png" alt="" id="hoteli">
+                    <br><label class="guide-name" for="hoteli">Andris Kobak</label></button>
+            </div>
+            <div class="guides">
+                <button onclick="openForm()" class="btn-guide"><img class="budapest-guides"
+                        src="https://eshendetesia.com/images/user-profile.png" alt="" id="hoteli">
+                    <br><label class="guide-name" for="hoteli">Andris Kobak</label></button>
+            </div>
+            <div class="guides">
+                <button onclick="openForm()" class="btn-guide"><img class="budapest-guides"
+                        src="https://eshendetesia.com/images/user-profile.png" alt="" id="hoteli">
+                    <br><label class="guide-name" for="hoteli">Andris Kobak</label></button>
+            </div>
+            <div class="guides">
+                <button onclick="openForm()" class="btn-guide"><img class="budapest-guides"
+                        src="https://eshendetesia.com/images/user-profile.png" alt="" id="hoteli">
+                    <br><label class="guide-name" for="hoteli">Andris Kobak</label></button>
+            </div>
+
+        </div>
+
+        <div class="form-popup" id="myForm">
+            <div class="chat">
+                <button class="close" onclick="closeForm()"><i class="fas fa-times"></i></button>
+                <div class="row">
+                    <div class="guide-chati-profile">
+                        <img class="budapest-guides-chat" src="https://eshendetesia.com/images/user-profile.png" alt=""
+                            id="guide">
+                        <label class="guide-chat-name" for="guide">Andris Kobak <br> local citizen & tour guide</label>
+                    </div>
+                </div>
+                <div class="sent-message" id="sent"></div>
+                <form action="">
+                <input type="text" class="type" id="typeMessage" placeholder="type a message"> <button value="Reset" type="reset" onclick="sendMessage(document.getElementById('typeMessage').value)" class="send"><i
+                        class="fas fa-paper-plane"></i></button></form>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer2">
+            <p class="footer-left">Contact the center of Express Tourism by: <br>
+                email: info@expresstourism.com <br>
+                phone: +383 49 000 000</p>
+
+            <p class="footer-right">
+                Follow us on: <br>
+                facebook.com/expresstourism <br>
+                instagram.com/expresstourism
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
